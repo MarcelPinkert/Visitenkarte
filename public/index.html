@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Marcel Pinkert">
+    <meta name="description" content="Meine persönliche HTML5-Visitenkarte">
+    <title>Visitenkarte – Marcel Pinkert</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Marcel Pinkert</h1>
+
+    <h2>Über mich</h2>
+    <img src="Bilder/Passbild.jpg" alt="Profilbild von Marcel" width="200">
+
+
+    <p>Hallo, ich bin Marcel, ein angehender Webentwickler, der gerade die Grundlagen von HTML5 lernt.
+        Auf dieser Seite findest du ein bisschen über mich, einen kleinen Multimediabereich
+        und ein Formular zum Kontaktieren.</p>
+    <p>Ich interessiere mich für Webentwicklung, Design und Technologie. In meiner Freizeit
+        programmiere ich gerne, schaue Tech-Vlogs und experimentiere mit neuen Webtechnologien.
+        Ich freue mich darauf, meine Fähigkeiten weiterzuentwickeln und spannende Projekte zu realisieren!</p>
+
+    <!-- GitHub Card -->
+    <div class="github-card">
+        <p>Besuche mein GitHub-Profil</p>
+        <a href="https://github.com/MarcelPinkert" target="_blank" class="github-btn">Mein GitHub</a>
+    </div>
+
+    <!-- Sprunglink Card -->
+    <div class="link-card">
+        <a href="#kontakt">Springe direkt zum Kontaktformular</a>
+    </div>
+
+    <!-- Multimedia Bereich -->
+    <h2>Multimedia</h2>
+    <video controls>
+        <source src="Video/Katze-Karmin.mp4" type="video/mp4">
+        Dein Browser unterstützt das Video nicht.
+    </video>
+
+    <audio controls>
+            <source src="Musik/brain-cyberpunk.mp3" type="audio/mpeg">
+            Dein Browser unterstützt das Audio-Element nicht.
+        </audio>
+    </audio>
+
+    <!-- Kontaktformular -->
+    <h2 id="kontakt">Kontaktformular</h2>
+    <form action="send.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Persönliche Daten</legend>
+
+            <label for="name">Name (Pflichtfeld):</label>
+            <input type="text" id="name" name="name" required placeholder="Max Mustermann"><br><br>
+
+            <label for="email">E-Mail (Pflichtfeld):</label>
+            <input type="email" id="email" name="email" required placeholder="beispiel@mail.de"><br><br>
+
+            <label for="file">Profilbild hochladen:</label>
+            <input type="file" id="file" name="file" accept="image/png, image/jpeg"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Deine Angaben</legend>
+
+            <label for="farbe">Lieblingsfarbe:</label>
+            <select id="farbe" name="farbe">
+                <option value="blau">Blau</option>
+                <option value="gruen">Grün</option>
+                <option value="rot">Rot</option>
+                <option value="gelb">Gelb</option>
+            </select><br><br>
+
+            <label for="kommentar">Kommentar:</label><br>
+            <textarea id="kommentar" name="kommentar" rows="4" cols="40"
+                placeholder="Deine Nachricht..."></textarea><br><br>
+
+            <input type="radio" id="info" name="kontaktart" value="info" checked>
+            <label for="info">Ich möchte nur Infos</label><br>
+            <input type="radio" id="support" name="kontaktart" value="support">
+            <label for="support">Ich brauche Support</label><br><br>
+
+            <input type="checkbox" id="newsletter" name="newsletter" value="ja">
+            <label for="newsletter">Newsletter abonnieren</label><br>
+        </fieldset>
+
+        <button type="submit">Absenden</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+/* Google Font importieren */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #b674e2, #061ad4);
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Alle Hauptcontainer */
+body > * {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #d182ff;
+  border-radius: 16px;
+  border: 2px solid #dcdcdc; /* hellgrauer Rahmen */
+  box-shadow: 0 8px 20px rgba(220,220,220,0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+body > *:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,255,0,0.6); /* Neon-grün Hover */
+}
+
+/* Überschriften */
+h1, h2 {
+  color: #222;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Links */
+a {
+  color: #5563DE;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+  color: #74ABE2;
+  transform: translateY(-2px);
+}
+
+/* GitHub Card */
+.github-card {
+  background: #d67eff;
+  border-radius: 16px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #dcdcdc;
+  box-shadow: 0 6px 18px rgba(220,220,220,0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.github-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,255,0,0.6);
+}
+
+.github-card .github-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.github-card .github-btn:hover {
+  background: #555;
+  transform: translateY(-2px);
+}
+
+/* Sprunglink Card */
+.link-card {
+  background: #d67eff;
+  border-radius: 16px;
+  padding: 15px 20px;
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #dcdcdc;
+  box-shadow: 0 6px 18px rgba(220,220,220,0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.link-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,255,0,0.6);
+}
+
+.link-card a {
+  text-decoration: none;
+  color: #5563DE;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.link-card a:hover {
+  color: #74ABE2;
+  transform: translateY(-2px);
+}
+
+/* Profilbild */
+img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 50%;
+  width: 200px;
+  border: 2px solid #dcdcdc;
+  box-shadow: 0 6px 18px rgba(220,220,220,0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.08) rotate(2deg);
+  box-shadow: 0 10px 25px rgba(0,255,0,0.6);
+}
+
+/* Video & Audio */
+video, audio {
+  display: block;
+  margin: 20px auto;
+  border-radius: 16px;
+  border: 2px solid #dcdcdc;
+  box-shadow: 0 6px 18px rgba(220,220,220,0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+video:hover, audio:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0,255,0,0.6);
+}
+
+/* Formular */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+fieldset {
+  border: 2px solid #dcdcdc;
+  border-radius: 12px;
+  padding: 15px;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+fieldset:hover {
+  box-shadow: 0 0 12px rgba(0,255,0,0.6);
+}
+
+legend {
+  font-weight: 600;
+  color: #5563DE;
+  padding: 0 10px;
+}
+
+/* Input, Select, Textarea */
+input, select, textarea, button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #5563DE;
+  box-shadow: 0 0 8px rgba(0,255,0,0.6);
+  outline: none;
+}
+
+/* Checkboxen & Radios */
+input[type="checkbox"], input[type="radio"] {
+  width: auto;
+  margin-right: 8px;
+}
+
+/* Button */
+button {
+  background: linear-gradient(135deg, #5563DE, #135ca5);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  border: none;
+}
+
+button:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 15px rgba(0,255,0,0.6);
+}
+
+/* Responsives Design */
+@media (max-width: 600px) {
+  body > * {
+    padding: 15px;
+  }
+  
+  img {
+    width: 150px;
+  }
+  
+  video {
+    width: 100%;
+  }
+}
+
+
+
